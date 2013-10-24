@@ -1,0 +1,12 @@
+<script type="text/ng-template" id="books-view">
+  <section class="books-section">
+  
+    <header>
+      <h2>Новый Завет</h2>  
+    </header>
+    
+    <ul class="book-list">
+      <li ng-repeat="book in books"><a href="/{{book.id}}">{{book.name}}</a></li>
+    </ul>
+  </section>
+</script>

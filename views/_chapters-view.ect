@@ -1,0 +1,11 @@
+<script type="text/ng-template" id="chapters-view">
+  <section class="chapters-section">
+    <h2>Chapter View</h2>
+    <a href="/">Back</a>
+    <ul>
+      <li ng-repeat="chapter in chapters">
+        <a href="/{{bookId}}/{{chapter}}">{{chapter}}</a>
+      </li>
+    </ul>
+  </section>
+</script>

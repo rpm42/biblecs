@@ -1,0 +1,36 @@
+{
+  "name": "csl-engine",
+  "version": "0.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "colors": "~0.6.2",
+    "ect": "~0.5.4",
+    "express": "~3.4.3",
+    "lodash": "~2.2.1",
+    "moment": "~2.3.1",
+    "mongodb": "~1.3.19",
+    "mongoose": "~3.6.20",
+    "uasync": "~0.1.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-bump": "~0.0.11",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-coffee": "~0.7.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-cssmin": "~0.6.2",
+    "grunt-contrib-less": "~0.8.0",
+    "grunt-contrib-stylus": "~0.9.0",
+    "grunt-contrib-uglify": "~0.2.4",
+    "grunt-contrib-watch": "~0.5.3",
+    "coffee-script": "~1.6.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Andrew Volkov <hello@vol4ok.net>",
+  "license": "MIT"
+}
