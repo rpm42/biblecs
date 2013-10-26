@@ -1,8 +1,8 @@
 <script type="text/ng-template" id="page-view">
-  <a href="/{{bookId}}">Back</a>
+  <a class="back" href="/{{bookId}}">Back</a>
   <section class="page">
     <h2>Глава {{chapter}}</h2>
-    <ol>
+    <ol class="verses-list">
       <li ng-repeat="verse in verses"><p class="csl">{{verse}}</p></li>
     </ol>
   </section>

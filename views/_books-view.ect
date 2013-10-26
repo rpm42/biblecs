@@ -1,6 +1,11 @@
 <script type="text/ng-template" id="books-view">
   <section class="books-section">
-  
+
+    <header class="main-header">
+      <h1>Библия</h1>
+      <h3>на церковно-славянском языке</h3>
+    </header>
+
     <header>
       <h2>Новый Завет</h2>  
     </header>
@@ -8,5 +13,6 @@
     <ul class="book-list">
       <li ng-repeat="book in books"><a href="/{{book.id}}">{{book.name}}</a></li>
     </ul>
+
   </section>
 </script>
