@@ -4,6 +4,7 @@ class ChaptersCtrl
     @$scope.chapters = []
     @$scope.bookId = @$routeParams.bookId
     @$booksSvc.getBook(@$routeParams.bookId).then (book) =>
+      @$scope.name = book.name
       for i in [1..book.chapters]
         @$scope.chapters.push(i)
 

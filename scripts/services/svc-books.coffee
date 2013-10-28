@@ -17,10 +17,11 @@ class BooksSvc
     deffered = @$q.defer()
 
     @getBooks().then (books) =>
-      if books[id] 
-        deffered.resolve(books[id])
-      else
-        deffered.reject()
+      for book in books
+        if book.id is id
+          deffered.resolve(book)
+          return book;
+      deffered.reject()
     , deffered.reject
 
     return deffered.promise
