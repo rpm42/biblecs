@@ -27,28 +27,45 @@ app
     res.render("index")
 
 db = {
-  "books": {
-    "mf": {
+  "books": [
+    {
       "id": "mf",
-      "name": "Евангелие от Матфея"
+      "name": "Евангелие от Матфея",
       "chapters": 28
     },
-    "mk": {
+    {
       "id": "mk",
-      "name": "Евангелие от Марка"
-      "chapters": 22
+      "name": "Евангелие от Марка",
+      "chapters": 16
+    },
+    {
+      "id": "lk",
+      "name": "Евангелие от Луки",
+      "chapters": 24
+    },
+    {
+      "id": "in",
+      "name": "Евангелие от Иоанна",
+      "chapters": 21
     }
-  },
+  ],
   "chapters": {
     "mf": [ 
       JSON.parse(fs.readFileSync("data/mf/01.json").toString()),
       JSON.parse(fs.readFileSync("data/mf/02.json").toString()),
       JSON.parse(fs.readFileSync("data/mf/03.json").toString()),
-      JSON.parse(fs.readFileSync("data/mf/04.json").toString())
+      JSON.parse(fs.readFileSync("data/mf/04.json").toString()),
+      JSON.parse(fs.readFileSync("data/mf/05.json").toString()),
+      JSON.parse(fs.readFileSync("data/mf/06.json").toString()),
+      JSON.parse(fs.readFileSync("data/mf/07.json").toString())
     ],
     "mk": [ 
       JSON.parse(fs.readFileSync("data/mk/01.json").toString()),
       JSON.parse(fs.readFileSync("data/mk/02.json").toString())
+    ],
+    "lk": [ 
+    ],
+    "in": [ 
     ]
   }
 }
