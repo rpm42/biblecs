@@ -6,4 +6,7 @@
       <li ng-repeat="verse in verses"><p class="csl">{{verse}}</p></li>
     </ol>
   </section>
+  <a class="prev" ng-if="chapter > 1" href="/{{bookId}}/{{chapter-1}}">Prev</a>
+  <a class="back" href="/{{bookId}}">Back</a>
+  <a class="next" href="/{{bookId}}/{{chapter+1}}">Next</a>
 </script>
