@@ -64,8 +64,11 @@ db = {
       JSON.parse(fs.readFileSync("data/mk/02.json").toString())
     ],
     "lk": [ 
+      JSON.parse(fs.readFileSync("data/lk/01.json").toString()),
+      JSON.parse(fs.readFileSync("data/lk/02.json").toString())
     ],
-    "in": [ 
+    "in": [
+      JSON.parse(fs.readFileSync("data/in/01.json").toString())
     ]
   }
 }
