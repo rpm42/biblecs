@@ -47,6 +47,11 @@ db = {
       "id": "in",
       "name": "Евангелие от Иоанна",
       "chapters": 21
+    },
+    {
+      "id": "ps",
+      "name": "Псалтирь",
+      "chapters": 151
     }
   ],
   "chapters": {
@@ -69,7 +74,8 @@ db = {
     ],
     "in": [
       JSON.parse(fs.readFileSync("data/in/01.json").toString())
-    ]
+    ],
+    "ps": JSON.parse(fs.readFileSync("data/ps.json").toString())
   }
 }
 
