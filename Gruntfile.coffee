@@ -37,6 +37,7 @@ module.exports = (grunt) ->
           "bower_components/angular-sanitize/angular-sanitize.js"
           "bower_components/moment/min/moment.min.js"
           "bower_components/moment/min/langs.min.js"
+          "bower_components/fastclick/lib/fastclick.js"
         ]
         dest: "public/js/core.js"
 

@@ -1,12 +1,19 @@
 <script type="text/ng-template" id="page-view">
-  <a class="back" href="/{{bookId}}">Back</a>
+
   <section class="page">
-    <h2>Глава {{chapter}}</h2>
+    <h2 id="title">{{name}}</h2>
+    <h3>Глава {{chapter}}</h3>
     <ol class="verses-list">
-      <li ng-repeat="verse in verses"><p class="csl">{{verse}}</p></li>
+      <li ng-repeat="verse in verses" id="{{$index+1}}"><p class="csl">{{verse}}</p></li>
     </ol>
   </section>
-  <a class="prev" ng-if="chapter > 1" href="/{{bookId}}/{{chapter-1}}">Prev</a>
-  <a class="back" href="/{{bookId}}">Back</a>
-  <a class="next" href="/{{bookId}}/{{chapter+1}}">Next</a>
+
+  <div class="nav-pane">
+    <nav class="page-nav">
+      <a class="back" href="/{{bookId}}"><i class="icon-menu"></i></a>
+      <a class="prev" ng-disabled="chapter > 1" href="/{{bookId}}/{{chapter-1}}"><i class="icon-left-2"></i></a>
+      <a class="next" ng-disabled="chapter >= maxChapter" href="/{{bookId}}/{{chapter+1}}"><i class="icon-right-2"></i></a>
+      <a class="up" href="#title"><i class="icon-up"></i></a>
+    </nav>
+  </div>
 </script>

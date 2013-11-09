@@ -16,6 +16,7 @@ configure = ($routeProvider, $locationProvider) ->
       controller: "PageCtrl"
 
 main = () ->
+  FastClick.attach(document.body)
 
 angular.module('app.ctrl', [
   "BooksCtrl"
