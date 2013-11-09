@@ -55,26 +55,10 @@ db = {
     }
   ],
   "chapters": {
-    "mf": [ 
-      JSON.parse(fs.readFileSync("data/mf/01.json").toString()),
-      JSON.parse(fs.readFileSync("data/mf/02.json").toString()),
-      JSON.parse(fs.readFileSync("data/mf/03.json").toString()),
-      JSON.parse(fs.readFileSync("data/mf/04.json").toString()),
-      JSON.parse(fs.readFileSync("data/mf/05.json").toString()),
-      JSON.parse(fs.readFileSync("data/mf/06.json").toString()),
-      JSON.parse(fs.readFileSync("data/mf/07.json").toString())
-    ],
-    "mk": [ 
-      JSON.parse(fs.readFileSync("data/mk/01.json").toString()),
-      JSON.parse(fs.readFileSync("data/mk/02.json").toString())
-    ],
-    "lk": [ 
-      JSON.parse(fs.readFileSync("data/lk/01.json").toString()),
-      JSON.parse(fs.readFileSync("data/lk/02.json").toString())
-    ],
-    "in": [
-      JSON.parse(fs.readFileSync("data/in/01.json").toString())
-    ],
+    "mf": JSON.parse(fs.readFileSync("data/mf.json").toString()),
+    "mk": JSON.parse(fs.readFileSync("data/mk.json").toString()),
+    "lk": JSON.parse(fs.readFileSync("data/lk.json").toString()),
+    "in": JSON.parse(fs.readFileSync("data/in.json").toString()),
     "ps": JSON.parse(fs.readFileSync("data/ps.json").toString())
   }
 }
