@@ -1,2 +1,4 @@
 temp
 dist
+__workflow
+deploy.sh
