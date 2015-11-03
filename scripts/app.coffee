@@ -1,5 +1,5 @@
 configure = ($routeProvider, $locationProvider) ->
-  moment.lang('ru')
+  moment.locale('ru')
 
   $locationProvider
     .html5Mode(yes)
